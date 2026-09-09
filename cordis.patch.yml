@@ -1,0 +1,7 @@
+# RhineLabUI bundle layer: mounts the plugin without modifying the Harness checkout.
+# Installed as a profile bundle (dsh.bundle.patch), so this file is applied
+# automatically by `dsh plugin --profile web add`; do NOT hand-copy the same
+# insert into the profile's own cordis.patch.yml (R-7.1 double-registration).
+- insert:
+    - id: rhinelab-ui
+      name: dsh-plugin-rhinelab-ui

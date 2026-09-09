@@ -1,0 +1,7 @@
+.dsh-test/
+.dsh-ctl/
+.scratch/
+node_modules/
+.npm-cache/
+.pnpm-store/
+.xdg-*/
