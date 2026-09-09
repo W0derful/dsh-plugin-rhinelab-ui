@@ -24,7 +24,11 @@
 
 ```bash
 # 从 GitHub 安装（构建产物已随仓库提交，无需构建步骤，因此不需要 allowBuilds）
-dsh plugin --profile web add github:<owner>/dsh-plugin-rhinelab-ui#v0.1.0
+dsh plugin --profile web add github:W0derful/dsh-plugin-rhinelab-ui#v0.1.0
+
+# 若上一条卡住：pnpm 默认用 HTTPS 拉 git 依赖，改用 SSH 形式（或先执行
+# `pnpm config set git-protocol ssh`）
+dsh plugin --profile web add git+ssh://git@github.com/W0derful/dsh-plugin-rhinelab-ui.git#v0.1.0
 
 # 或从 release tarball 安装
 dsh plugin --profile web add https://github.com/<owner>/dsh-plugin-rhinelab-ui/releases/download/v0.1.0/dsh-plugin-rhinelab-ui-0.1.0.tgz
