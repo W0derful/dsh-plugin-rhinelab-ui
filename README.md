@@ -101,4 +101,4 @@ npm run verify     # 在隔离实例上跑 P0~P4 全部断言（需要 DSH_HOME 
 - 字体：MiSans（小米），许可见 `rhine-dist/fonts/MiSans-license.pdf`。
 - 接管层模式参考：[open-sea-skin](https://github.com/d-dev0101/open-sea-skin)（MIT）。
 
-规格与偏差记录见仓库内 `deepseek harness pl`（SPEC v1.0-R2）与 `SPEC-DEVIATIONS.md`。
+实现细节与验收记录（规格书、逐条偏差、P0–P4 报告）保存在开发工作区的 `.notes/` 目录，不随仓库分发。
